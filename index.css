@@ -1,0 +1,102 @@
+body {
+  /* background: rgb(15, 0, 15); */
+  padding: 50px;
+  background: url(./bg.jpg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.svg {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-color: rgb(50, 142, 179);
+  margin: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 420px;
+  height: 70px;
+  background-color: rgb(54, 10, 63);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.last-income,
+.expense,
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.last-income {
+  color: rgb(16, 185, 129);
+}
+
+.expense {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.balance {
+  color: yellow;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.add-income,
+.add-expense,
+.all-transaction,
+.report {
+  width: 180px;
+  height: 180px;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.add-income:hover,
+.add-expense:hover,
+.all-transaction:hover,
+.report:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.add-income {
+  background-color: rgb(26, 163, 106);
+}
+.add-expense {
+  background-color: rgb(194, 55, 55);
+}
+.all-transaction {
+  background-color: rgb(42, 141, 173);
+}
+
+.report {
+  color: black;
+}
+
+.income-expense,
+.transaction-report {
+  display: flex;
+  column-gap: 70px;
+}
