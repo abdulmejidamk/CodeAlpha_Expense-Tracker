@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./expense-tracker.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="income-expense-container">
+        <div class="income-container">
+          <h1>Add <span>Income</span></h1>
+          <form action="">
+            <!-- <label for="amount" id="amount">Amount</label> -->
+            <input
+              type="number"
+              value=""
+              min="0"
+              id="incomeAmount"
+              placeholder="Amount.."
+            />
+            <input type="submit" value="Add" id="addIncome" />
+          </form>
+          <div class="stats">
+            <span>Total Balance:</span>
+            <span id="balance">$</span>
+          </div>
+        </div>
+
+        <div class="expense-container">
+          <div>
+            <h1>Add <span>Expenses</span></h1>
+          </div>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Description ..."
+              name=""
+              id="description"
+              required
+            />
+            <input
+              type="number"
+              min="0"
+              name=""
+              id="amount"
+              placeholder="Amount ..."
+              required
+            />
+            <input type="submit" value="Add" id="addExpense" />
+          </form>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <div class="expenses-list">
+        <ol class="ordered-expenses"></ol>
+      </div>
+    </div>
+    <script src="./expense-tracker.js"></script>
+  </body>
+</html>
